@@ -24,6 +24,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code
 COPY app/ ./app/
 COPY model_core.py .
+COPY model.pkl .
+COPY vectorizer.pkl .
 
 # Drop to non-root
 USER appuser
